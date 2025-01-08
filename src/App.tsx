@@ -1,10 +1,13 @@
+import Theme from "./components/theme/Theme";
+import { ThemeProvider } from "./components/theme/ThemeProvider";
 import FetchData from "./components/useEffect-hook/FetchData";
 
 const App = () => {
   return (
-    <div>
+    <ThemeProvider>
+      <Theme />
       <FetchData />
-    </div>
+    </ThemeProvider>
   );
 };
 
